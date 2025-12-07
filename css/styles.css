@@ -1,5 +1,17 @@
 body {
+  margin: 0;
   background-color: #002a8d;
   font-family: 'Flexo-Demi';
   color: #ffffff;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.pantalla {
+  display: none;
+  padding: 150px 70px;
+}
+
+.pantalla.active {
+  display: block;
 }

@@ -10,21 +10,23 @@
 <body>
 
   <!--Pantalla de inicio-->
-  <div>
+  <div id="inicio" class="pantalla active">
     <h1>Bienvenido al BCP</h1>
     <h3>Inserta tu tarjeta</h3>
     <h2>DEPOSITA y RETIRA sin costo</h2>
+    <button onclick="mostrarPantalla('dni')">Continuar</button>
   </div>
 
   <!--Pantalla DNI-->
-  <div>
+  <div id="dni" class="pantalla">
+    <button onclick="mostrarPantalla('inicio')">Salir</button>
     <h2>Ingresa tu número de DNI</h2>
     <h4>DNIynikipa numerunta yaykuchiy</h4>
     <input type="text" placeholder="8 números">
   </div>
 
   <!--Pantalla menú-->
-  <div>
+  <div id="menú" class="pantalla">
     <h4>¿Qué operación deseas hacer hoy?</h4>
     <button>Salir</button>
     <div>
@@ -59,7 +61,7 @@
   <!--Pantalla Depóstio a Ahorro Soles-->
 
   <!--Pantalla Retiro-->
-  <div>
+  <div id="retiro" class="pantalla">
     <h3>Retiro de efectivo</h3>
     <h2>Ingresa o selecciona el monto a retirar</h2>
     <button>Regresar</button>
@@ -89,11 +91,12 @@
   </div>
 
   <!--Pantalla confirmación retiro-->
-  <div>
+  <div id="confirmación" class="pantalla">
     <h2>Ingresa tu clave</h2>
     <h4>para confirmar tu retiro</h4>
     <input type="text" placeholder="4 números">
   </div>
-  
+
+  <script src="js/main.js"></script>
 </body>
 </html>
